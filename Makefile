@@ -1,4 +1,5 @@
-CFLAGS = -Wall -Wextra -levent
+CFLAGS = -Wall -Wextra
+CFLAGS += -I./libevent/include -L./libevent/.libs -levent
 CXXFLAGS = $(CFLAGS)
 
 GCC=gcc $(CFLAGS) -ggdb -pthread
